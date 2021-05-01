@@ -4,7 +4,9 @@
 
 ## **Goal for this project** 
 
-Welcome to May Day! 
+Welcome to May Day! Your one stop shop for all your weather needs. On this site, you will easily be able to access the weather
+in any location in the world. Plan your day, week, or two with our very user friendly design. Trust that our weather is the most 
+accurate so there is no need to look any further than right here.
 
 ---
 <a></a>
@@ -50,7 +52,11 @@ Welcome to May Day!
 
 <a></a>
 ### **User Stories**
-.
+
+* As a user, I was to easily input my location information to retrieve the weather data in my desired area.
+* As a user, I want to be able to plan my vacation plans around the accurate results from the website.
+* As a user, I want to be able to be able to access weather data using my phone's location.
+
 
 <a></a>
 ### **Site owners Goals**
