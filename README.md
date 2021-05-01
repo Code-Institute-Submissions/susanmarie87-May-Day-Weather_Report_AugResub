@@ -1,4 +1,4 @@
-# **May day Weather Report**
+# **May Day Weather Report**
 
 ![Mokeup image](wireframes/mokeup-image.png)
 
@@ -56,10 +56,18 @@ accurate so there is no need to look any further than right here.
 * As a user, I was to easily input my location information to retrieve the weather data in my desired area.
 * As a user, I want to be able to plan my vacation plans around the accurate results from the website.
 * As a user, I want to be able to be able to access weather data using my phone's location.
+* As a user, I would like to 
 
 
 <a></a>
 ### **Site owners Goals**
+
+* As a site owner, I want to provide and UX intuitive website so simple anyone can easily access the weather data.
+* As a Site Owner, I want to provide accurate weather reporting so people rely on my service over competition.
+* As a Site Owner, I want to make sure the site is visuallly appealing.
+* As a Site Owner, I want to give people the option to let the site access their location to give my users 
+  automatic weather updates.
+
 
 [Back to Top](#table-of-contents)
 
@@ -68,18 +76,16 @@ accurate so there is no need to look any further than right here.
 <a></a>
 #### Requirements
 * Easy to navigate by using the navigation menu
-* Relevant content about the property
 * Appealing visual elements
-* Easy way to contact property
-* Clear information about prices and policies
+* Easy way to search for different locations for weather data.
+* Accurate weather reporting.
+* 
 
 <a></a>
 #### Expectations
-* When clicking on links (like social media), I expect the page to open in a seperate browser
-* I expect feedback when submitting the contact form that the form has been submitted correctly
-* I expect that the navigation links work properly so that is takes me wherever I want to go
+* The search feature should be intuitive and work correctly.
+* The Site should have easy links for navigating to other parts of the site.
 * Clear info about location 
-* Website is in line with the customer's journey
 
 [Back to Top](#table-of-contents)
 
