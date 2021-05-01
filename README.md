@@ -126,16 +126,20 @@ You can find my wireframes below:
 
 #### Navigation
 
-#### Hero Image
+#### Information box letting people know how to use the site.
 
-#### Welcome Section
+#### Current Location Weather
 
-#### Tree Houses Section
+#### Search Custom Location Weather
 
-#### Gallery
+#### Live Weather
 
+#### Forecast Weather
 
-#### Testimonials
+#### View Map
+
+#### FOOTER
+
 
 Under the testimonials I have added the links to social media using icons which opens in a separate tab in the browers. 
 This to make the website more user friendly.
@@ -149,11 +153,8 @@ Below the form there is a submit button which also triggers a modal to open up w
 ### **Features to be implemented**
 
 * Interactive map for location with a link to google maps
-* Direct booking module to increase direct bookings
-* Whenever the form is submitted correctly, the information should be send to the email account of the property.
-* Chat bot that links with the whatsapp of the property
-* Links to external partners / companies like restaurants, activities in the neighbourhood, hike trails etc.
-* Include information on how their data will be used (GDPR-Law)
+* 
+* 
 
 [Back to Top](#table-of-contents)
 
