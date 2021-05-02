@@ -141,13 +141,7 @@ You can find my wireframes below:
 #### FOOTER
 
 
-Under the testimonials I have added the links to social media using icons which opens in a separate tab in the browers. 
-This to make the website more user friendly.
-
 #### Contact 
-At the contact section I have provided contact and location details on the left. 
-On the right I implemented a form which they can fill in if they would like to get in contact with the owners. 
-Below the form there is a submit button which also triggers a modal to open up which gives feedback to the user that the form has been successfully submitted.
 
 <a></a>
 ### **Features to be implemented**
@@ -188,34 +182,21 @@ Below the form there is a submit button which also triggers a modal to open up w
 
 <a></a>
 ## **Testing**
+Testing can be viewed at [TESTING.md](https://github.com/kenwilde1/weather-now/blob/main/TESTING.md)
 
 ### Navigation bar
 
 * **Plan**    
-I want to include a navigation bar which will be fixed on top. 
-While scrolling down the page, I want to give the user a clear view on where they are located on the site by using the scrollspy.
-Whenever clicked on one of the navigation links, it should take you where you want to go.
-To be more attractive and easy to use on mobile, I want the navigation bar to convert to a hamburger sign with a dropdown menu.
 
 * **Implementation**   
-I implemented the navigation bar using Bootstrap. This helps to give an overall structure and lay out to the navbar. 
-I have used CSS to overwrite the default settings and making the navbar in line with the overall webite. 
-In the body element I implemented the scrollspy and gave it an offset so whenever you click on one of the links, it shows the title with some spacing around. 
-I have also used Bootstrap to implement the hamburger sign for mobile devices. 
+. 
 
 * **Test**    
-To test the navigation bar, I have click all the links to make sure it works properly. 
-I have also opened the website in various browers (safari, google chrome, mozilla firefox) to make sure it works on all browsers and devices.
-I also double checked the scrollspy on the various browsers and devices. 
-On mobile the navigation transformed into the hamburger sign with a dropdown menu.
+
 
 * **Result**    
-The navigation bar shows nicely like expected on all browsers and devices. 
-It did notice that the contact link was too close to the right side of the screen which I solved by increasing the margin. 
-All the links work properly and the scrollspy gives a clear view on where you are located on the page. 
 
 * **Verdict**    
-The test has passed all the criteria and works like planned.
 
 
 * **Implementation**    
@@ -227,8 +208,8 @@ The test has passed all the criteria and works like planned.
 * **Verdict**    
 
 ### Contact Form 
-* **Plan**    
 
+* **Plan**    
 
 * **Implementation**    
 
