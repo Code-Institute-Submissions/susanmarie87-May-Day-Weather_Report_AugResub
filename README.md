@@ -115,11 +115,11 @@ In order to find appropriate fonts for my website, I have visited [Google Fonts]
 
 You can find my wireframes below:
 
-**[Desktop Wireframe](assets/wireframes/Desktop.png)**
+![Desktop Wireframe](wireframes/Desktop.png)
 
-**[iPad Wireframe](assets/wireframes/iPad.png)**
+![iPad Wireframe](wireframes/iPad.png)
 
-**[Mobile Wireframe](assets/wireframes/Mobile.png)**
+![Mobile Wireframe](wireframes/Mobile.png)
 
 [Back to Top](#table-of-contents)
 
@@ -145,7 +145,6 @@ You can find my wireframes below:
 #### View Map
 
 #### FOOTER
-
 
 #### Contact 
 
