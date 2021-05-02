@@ -115,6 +115,12 @@ In order to find appropriate fonts for my website, I have visited [Google Fonts]
 
 You can find my wireframes below:
 
+**[Desktop Wireframe](assets/wireframes/Desktop.png)**
+
+**[iPad Wireframe](assets/wireframes/iPad.png)**
+
+**[Mobile Wireframe](assets/wireframes/Mobile.png)**
+
 [Back to Top](#table-of-contents)
 
 ---
@@ -147,8 +153,9 @@ You can find my wireframes below:
 ### **Features to be implemented**
 
 * Interactive map for location with a link to google maps
-* 
-* 
+* A feature that could display the city for which the weather data is being displayed.
+* A feature that could change the backgroud image to match the current weather conditions i.e. rainy weather = rainy background.
+
 
 [Back to Top](#table-of-contents)
 
