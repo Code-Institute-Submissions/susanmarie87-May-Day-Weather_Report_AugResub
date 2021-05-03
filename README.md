@@ -130,23 +130,18 @@ You can find my wireframes below:
 <a></a>
 ### **Existing Features**
 
-#### Navigation
-
-#### Information box letting people know how to use the site.
-
 #### Current Location Weather
+Upon opening the website page, the weather data for your current location will be displayed along with time and date information.
 
 #### Search Custom Location Weather
-
+The site has a built-in search feature that will allow the users to search anywhere in the world to check the current weather data.
 #### Live Weather
+The live weather is displayed conveniently on the landing page. 
 
 #### Forecast Weather
+There will be a feature enabling users to check and see what the future weather data will be
 
-#### View Map
-
-#### FOOTER
-
-#### Contact 
+ 
 
 <a></a>
 ### **Features to be implemented**
