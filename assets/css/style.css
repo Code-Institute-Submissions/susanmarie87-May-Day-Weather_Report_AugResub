@@ -35,12 +35,15 @@ header input {
     border-radius: 16px 0px 16px 0px;
     border-bottom: 3px solid rgba(203, 17, 227, 0.21);
 
-    color: black;
+    color: whitesmoke;
     font-size: 20px;
     font-weight: 300;
     transition: 0.2s ease-out;
 }
 
+header input:focus {
+    background-color: rgba(171, 160, 165, 0.1);
+}
 
 
 
