@@ -15,7 +15,34 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: linear-gradient;
     background-image: linear-gradient (to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
 }
+
+header {
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+
+header input {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(203, 17, 227, 0.01);
+    border-radius: 16px 0px 16px 0px;
+    border-bottom: 3px solid rgba(203, 17, 227, 0.21);
+
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+}
+
+
+
+
+
 
