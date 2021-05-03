@@ -31,7 +31,7 @@ header input {
     padding: 10px 15px;
     border: none;
     outline: none;
-    background-color: rgba(203, 17, 227, 0.01);
+    background-color: whitesmoke;
     border-radius: 16px 0px 16px 0px;
     border-bottom: 3px solid rgba(203, 17, 227, 0.21);
 
