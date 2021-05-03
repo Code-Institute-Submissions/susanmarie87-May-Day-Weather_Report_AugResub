@@ -135,18 +135,19 @@ Upon opening the website page, the weather data for your current location will b
 
 #### Search Custom Location Weather
 The site has a built-in search feature that will allow the users to search anywhere in the world to check the current weather data.
+
 #### Live Weather
-The live weather is displayed conveniently on the landing page. 
+The live weather data is displayed conveniently on the landing page. 
 
 #### Forecast Weather
 There will be a feature enabling users to check and see what the future weather data will be
-
+for the upcoming week all the way up to ten days.
  
 
 <a></a>
 ### **Features to be implemented**
 
-* Interactive map for location with a link to google maps
+* Interactive map for location with a link to activities that are suitable for the days weather.
 * A feature that could display the city for which the weather data is being displayed.
 * A feature that could change the backgroud image to match the current weather conditions i.e. rainy weather = rainy background.
 
