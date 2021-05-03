@@ -45,6 +45,15 @@ header input:focus {
     background-color: rgba(171, 160, 165, 0.1);
 }
 
+main {
+    flex: 1 1 100%;
+    padding: 25px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 
 
 
