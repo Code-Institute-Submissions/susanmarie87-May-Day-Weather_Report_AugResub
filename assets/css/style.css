@@ -74,6 +74,9 @@ main {
     text-shadow: 20px 40 px rgba(0, 0, 0, 0.3);
 }
 
+.current .temp span {
+    font-weight: 500;
+}
 
 
 
