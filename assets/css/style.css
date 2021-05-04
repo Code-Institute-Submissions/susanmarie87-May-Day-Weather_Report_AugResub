@@ -54,6 +54,13 @@ main {
     text-align: center;
 }
 
+.location .city {
+    color: #F0FFFF;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
 
 
 
