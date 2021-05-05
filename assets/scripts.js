@@ -18,3 +18,7 @@ function getResults (query) {
         return weather.json();
     }).then(displayResults);
 }
+
+function displayResults (weather){
+    let city = document.querySelector
+}
