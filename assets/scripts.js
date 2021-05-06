@@ -28,3 +28,9 @@ function displayResults (weather){
     let date = document.querySelector('.location .date');    
     date.innerText = dateBuilder(now);
 }
+
+function dateBuilder (d) {
+    let months= ["January", "February", "March", "April", "May", "June", "July"
+    "August", "September", "October", "November", "December"];
+    
+}
