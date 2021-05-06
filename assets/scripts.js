@@ -27,6 +27,8 @@ function displayResults (weather){
     let now = new Date();
     let date = document.querySelector('.location .date');    
     date.innerText = dateBuilder(now);
+
+    let temp = document.querySelector('.current .temp');
 }
 
 function dateBuilder (d) {
