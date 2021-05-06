@@ -33,6 +33,9 @@ function displayResults (weather){
  
     let weather_el = document.querySelector('.current .weather');
     weather_el.innertext = weather.weather[0].main;
+
+    let hilow = document.querySelector('.hi-low');
+    hilow.inner = `${weather.main.temp_min}°f / ${weather.main.temp_max}°f`;
     
 
 }
