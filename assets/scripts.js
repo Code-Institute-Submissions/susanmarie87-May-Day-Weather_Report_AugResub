@@ -29,6 +29,7 @@ function displayResults (weather){
     date.innerText = dateBuilder(now);
 
     let temp = document.querySelector('.current .temp');
+    temp.innerHTML = `${Math.round(weather.main.temp)}<span>°F`;
 }
 
 function dateBuilder (d) {
