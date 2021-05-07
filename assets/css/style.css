@@ -68,7 +68,6 @@ main {
     font-size: 102px;
     font-weight: 900;
     margin: 2px 0px;
-    text-shadow: 20px 40 px rgba(0, 0, 0, 0.3);
 }
 
 .current .temp span {
