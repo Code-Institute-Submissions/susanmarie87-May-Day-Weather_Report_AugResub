@@ -184,7 +184,7 @@ for the upcoming week all the way up to ten days.
 
 <a></a>
 ## **Testing**
-Testing can be viewed at [TESTING.md](https://github.com/kenwilde1/weather-now/blob/main/TESTING.md)
+Testing can be viewed at [TESTING.md](https://github.com/susanmarie87/may-day-weather-report/TESTING.md)
 
 ### Navigation bar
 
