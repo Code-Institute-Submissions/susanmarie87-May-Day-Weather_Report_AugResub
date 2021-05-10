@@ -1,6 +1,6 @@
 const api = {
     key: "3868ebac95625426ec49b0031e0e6a5c",
-    base:"https://home.openweathermap.org/data/2.5/"
+    base:"https://api.openweathermap.org/data/2.5/"
 }
 
 const searchbox = document.querySelector('.search-box');
@@ -12,14 +12,14 @@ function set(evt) {
     }
 }
 
-function getResults (query) {
+function getResults(query) {
     fetch (`${api.base}weather?q=${query}&units=imperial&APPID=${api.key}`)
     .then(weather => {
         return weather.json();
     }).then(displayResults);
 }
 
-function displayResults (weather){
+function displayResults(weather) {
     let city = document.querySelector
     city.innerText = `${weather.name}, ${weather.sys.country}`;
 
