@@ -30,14 +30,14 @@ function displayResults(weather) {
     let temp = document.querySelector('.current .temp');
     temp.innerHTML = `${Math.round(weather.main.temp)}<span>°F</span>`;
  
-    let weather_el = document.querySelector('.current .weather');
-    weather_el.innertext = weather.weather[0].main;
+    let currentWeather = document.querySelector('.current .weather');
+    currentWeather.innertext = weather.weather[0].main;
 
     let hilow = document.querySelector('.hi-low');
     hilow.inner = `${Math.round(weather.main.temp_min)}°f / ${Math.round(weather.main.temp_max)}°f`;
 }
 
-function dateBuilder (d) {
+function dateBuilder(d) {
     let months= ["January", "February", "March", "April", "May", "June", "July",
     "August", "September", "October", "November", "December"];
     let days = ["Sunday", "Monday","Tuesday", "Wednesday", "Thursday", "Friday",
