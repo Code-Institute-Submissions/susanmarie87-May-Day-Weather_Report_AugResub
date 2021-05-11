@@ -6,7 +6,7 @@ const api = {
 const searchbox = document.querySelector('.search-box');
 searchbox.addEventListener('keypress', setQuery);
 
-function set(evt) {
+function setQuery(evt) {
     if (evt.keyCode == 13 ) {
         getResults(searchbox.value);
     }
@@ -20,7 +20,7 @@ function getResults(query) {
 }
 
 function displayResults(weather) {
-    let city = document.querySelector
+    let city = document.querySelector('.location .city');
     city.innerText = `${weather.name}, ${weather.sys.country}`;
 
     let now = new Date();
