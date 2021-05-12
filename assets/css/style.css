@@ -84,7 +84,8 @@ html {
         transform: translate(-50%, -40%);
     }
     .current .temp {
-        font-size: ;
+        font-size: 100px;
+        color:#ffff4d;
         position: absolute;
         top: 40%;
         left: 50%;
