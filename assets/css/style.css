@@ -83,6 +83,30 @@ html {
         padding-top: 20px;
         transform: translate(-50%, -40%);
     }
+    .current .temp {
+        font-size: ;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding-top: 50px;
+        transform: translate(-50%, -30%);
+    }
+    .current .cloudy {
+        font-size: 35px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding-top: 90px;
+        transform: translate(-50%, -30%);
+    }
+    .current .hi-low {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding-top: 95px;
+        transform: translate(-50%, -30%);
+    }
+
 
 
 
