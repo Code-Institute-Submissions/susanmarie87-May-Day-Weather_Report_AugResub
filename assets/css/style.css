@@ -57,11 +57,11 @@ html {
         padding: 10px 15px;
         border: none;
         outline: none;
-        background-color: rgba(255, 255, 255, 0.3);
+        background-color: rgba(31, 27, 27, 0.3);
         border-radius: 16px 0px 16px 0px;
         border-bottom: 3px solid #DF8E00;
         
-        color: #313131;
+        color: #070000;
         font-size: 20px;
         font-weight: 300;
         transition: 0.2s ease-out;
@@ -70,13 +70,15 @@ html {
         background-color: rgba(255, 255, 255, 0.6);
       }
       .location .city {
-        color:azure;
+        font-size: 25px;
+        color:#ffff4d;
         position: absolute;
         top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
     .location .date {
+        color: #ffff4d;
         position: absolute;
         top: 27%;
         left: 50%;
@@ -98,7 +100,7 @@ html {
         position: absolute;
         top: 60%;
         left: 50%;
-        padding-top: 90px;
+        padding-top: 100px;
         transform: translate(-50%, -30%);
     }
     .current .hi-low {
