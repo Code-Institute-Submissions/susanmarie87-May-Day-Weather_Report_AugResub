@@ -94,15 +94,18 @@ html {
     }
     .current .cloudy {
         font-size: 35px;
+        color: #ffff4d;
         position: absolute;
-        top: 50%;
+        top: 60%;
         left: 50%;
         padding-top: 90px;
         transform: translate(-50%, -30%);
     }
     .current .hi-low {
+        font-size: 15px;
+        color:#ffff4d;
         position: absolute;
-        top: 50%;
+        top: 68%;
         left: 50%;
         padding-top: 95px;
         transform: translate(-50%, -30%);
