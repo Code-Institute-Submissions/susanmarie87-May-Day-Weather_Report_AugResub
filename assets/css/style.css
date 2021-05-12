@@ -72,13 +72,13 @@ html {
       .location .city {
         color:azure;
         position: absolute;
-        top: 50%;
+        top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
     .location .date {
         position: absolute;
-        top: 50%;
+        top: 27%;
         left: 50%;
         padding-top: 20px;
         transform: translate(-50%, -40%);
@@ -86,7 +86,7 @@ html {
     .current .temp {
         font-size: ;
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 50%;
         padding-top: 50px;
         transform: translate(-50%, -30%);
