@@ -66,4 +66,24 @@ html {
         font-weight: 300;
         transition: 0.2s ease-out;
       }
+      header input:focus {
+        background-color: rgba(255, 255, 255, 0.6);
+      }
+      .location .city {
+        color:azure;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .location .date {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding-top: 20px;
+        transform: translate(-50%, -40%);
+    }
+
+
+
       
