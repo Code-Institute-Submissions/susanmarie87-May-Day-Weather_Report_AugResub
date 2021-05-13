@@ -12,14 +12,14 @@ function setQuery(evt) {
     }
 }
 
-function getResults(query) {
-    fetch (`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
+function getWeatherData(cityName) {
+    fetch (`${api.base}weather?q=${cityName}&units=metric&APPID=${api.key}`)
     .then(weather => {
         return weather.json();
     }).then(displayResults);
 }
 
-function displayResults(weather) {
+function showWeatherResults(weather) {
     let city = document.querySelector('.location .city');
     city.innerText = `${weather.name}, ${weather.sys.country}`;
 
@@ -37,16 +37,16 @@ function displayResults(weather) {
     hilow.inner = `${Math.round(weather.main.temp_min)}°c / ${Math.round(weather.main.temp_max)}°c`;
 }
 
-function dateBuilder(d) {
+function generateDate(timeAndDate) {
     let months= ["January", "February", "March", "April", "May", "June", "July",
     "August", "September", "October", "November", "December"];
     let days = ["Sunday", "Monday","Tuesday", "Wednesday", "Thursday", "Friday",
     "Saturday"];
 
-    let day = days[d.getDay()];
-    let date = d.getDate();
-    let month = months[d.getMonth()];
-    let year = d.getFullYear();
+    let day = days[timeAndDate.getDay()];
+    let date = timeAndDate.getDate();
+    let month = months[timeAndDate.getMonth()];
+    let year = timeAndDate.getFullYear();
 
     return `${day} ${date} ${month} ${year}`
 }
