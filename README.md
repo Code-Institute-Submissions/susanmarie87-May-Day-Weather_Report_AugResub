@@ -101,8 +101,7 @@ In order to find appropriate fonts for my website, I have visited [Google Fonts]
 
 <a></a>
 #### Colors
-Initially, the original background chosen had a type of May Day style theme behind it with tons of lightning igniting the sky. Getting into the project though, the weather app needed 
-a bit of a kick, so the style was completely hanged. A CSS parallax background was added as the motion gives the weather app a nice touch versus being mundane with a simple background image.
+
 
 ![Color Scheme](wireframes/color-scheme.png)
 
@@ -188,12 +187,10 @@ for the upcoming week all the way up to ten days.
 ## **Testing**
 Testing can be viewed at [TESTING.md](https://github.com/susanmarie87/may-day-weather-report/TESTING.md)
 
-### Navigation bar
-
 * **Plan**    
-
+Initially, the original background chosen had a type of May Day style theme behind it with tons of lightning igniting the sky. 
 * **Implementation**   
-. 
+. The background image was implemented 
 
 * **Test**    
 
@@ -292,7 +289,10 @@ To run the project locally:
 [Inspiration for the project](https://www.youtube.com/watch?v=n4dtwWgRueI)
 
 ### Acknowledgements
+[Simen Daehlin](https://www.linkedin.com/in/simendaehlin/) for quite literally dragging me through JavaScript. 
+Without his help in helping to change my mindset about my capabilities, I may have given up. 
 
+[Code Institute](https://codeinstitute.net/) for all of their assistance, patience with me, and resources to help me along
 
 [Back to Top](#table-of-contents)
 
