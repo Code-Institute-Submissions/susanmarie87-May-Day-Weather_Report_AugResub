@@ -83,9 +83,10 @@ accurate so there is no need to look any further than right here.
 
 <a></a>
 #### Expectations
+
+* The user should know exactly what to do when first introduced to the landing page.
 * The search feature should be intuitive and work correctly.
-* The Site should have easy links for navigating to other parts of the site.
-* Clear info about location 
+* Clear info about location and data is desirable. 
 
 [Back to Top](#table-of-contents)
 
@@ -108,7 +109,6 @@ The background image represents the color scheme consisting mainly of green, a l
 
 The color chosen for the font was: #ffff80 which is a soft yellow to stand out against the parallax background. The font color needs to be specific against this images as it will pass through many different shades. #ffff80 seemed to be the best fit as it was the least straining on the eyes. 
 
-![Color Scheme](wireframes/color-scheme.png)
 
 <a></a>
 #### Structure
@@ -121,11 +121,11 @@ The color chosen for the font was: #ffff80 which is a soft yellow to stand out a
 
 You can find my wireframes below:
 
-![Desktop Wireframe](wireframes/Desktop.png)
+![Desktop Wireframe](wireframes/mobile-h.png)
 
-![iPad Wireframe](wireframes/iPad.png)
+![iPad Wireframe](wireframes/mobile-l.png)
 
-![Mobile Wireframe](wireframes/Mobile.png)
+![Mobile Wireframe](wireframes/laptop-md.png)
 
 [Back to Top](#table-of-contents)
 
@@ -153,8 +153,7 @@ The live weather data is displayed conveniently on the landing page.
 * Interactive map for location with a link to activities that are suitable for the days weather.
 * A feature that could display the city for which the weather data is being displayed.
 * A feature that could change the backgroud image to match the current weather conditions i.e. rainy weather = rainy background.
-* Data on the road conditions.
-* 
+* Data on the safety of road conditions. 
 
 
 [Back to Top](#table-of-contents)
@@ -192,30 +191,33 @@ The live weather data is displayed conveniently on the landing page.
 Testing can be viewed at [TESTING.md](https://github.com/susanmarie87/may-day-weather-report/TESTING.md)
 
 * **Plan**    
-Initially, the original background chosen had a type of May Day style theme behind it with tons of lightning igniting the sky. 
+Initially, the original background chosen had a type of May Day style theme behind it with tons of lightning igniting the sky. However, this picture and background theme was changed in the middle of the project. It was too harsh visually and the weather app called for something that would be slightly more impressive, which led me to find the CSS parallax background.
+
 * **Implementation**   
-. The background image was implemented 
+. The CSS parallax background image was adapted from (https://www.sliderrevolution.com/resources/css-animated-background/) and implemented into the style.css file. 
 
 * **Test**    
-
+The background was tested on multiple screen sizes and devices all of which presented properly and did not return any errors. There was however an issue with visual appeal.
+Due to the many colors in the background, it seemed as though all of the font colors would strain the eyes. 
 
 * **Result**    
-
+The visual problem was solved by removing the green trees in the background. This offset the clouds just enough so that the font did not get lost when it moved through the white backgroud. The green also impaired the font color presentation.
 * **Verdict**    
+The background looked much better without the green trees behind the font but was still visually appealing to the user.
 
+* **Plan**   
+The weather app needs to have a search box function where a user can input the location information and the app will return the exact data of the desired location. 
 
 * **Implementation**    
-
+Several methods were used in order to get this function to work properly. First, we set the 
 * **Test**    
 
 * **Result**    
 
 * **Verdict**    
 
-### Contact Form 
-
 * **Plan**    
-
+The weather app will have a feature that returns the high and low temperatures of the location. 
 * **Implementation**    
 
 * **Test**    
@@ -227,35 +229,7 @@ Initially, the original background chosen had a type of May Day style theme behi
 [Back to Top](#table-of-contents)
 
 ### Bugs
-
-#### Form validation
-
-* **Bug**    
-
-* **Fix**        
-
-* **Verdict**    
-
-#### Hero Image
-
-* **Bug**    
-
-* **Fix**    
-
-
-* **Bug**    
-
-* **Fix**    
-
-* **Verdict**    
-
-#### Navigation menu on smaller screensizes 
-
-* **Bug**    
-
-* **Fix**        
-
-* **Verdict**    
+JavaScript. That's it. That's the bug.
 
 [Back to Top](#table-of-contents)
 
@@ -268,7 +242,7 @@ After writing the code, committing and pushing it to GitHub:
 1. Navigate to the repository on github and click **Settings**.
 1. From there, go to the **Source section** within the Github Pages section.
 1. Select **master branch** on the dropdown menu, and click save.
-1. Now the website is live on **https://anouksmet.github.io/Naturazy/**
+1. Now the website is live on **https://susanmarie87.github.io/May-Day-Weather_Report/**
 1. Any time commits and pushes are sent to Github, the Github Pages site should update shortly after.
 
 To run the project locally:
