@@ -102,6 +102,11 @@ In order to find appropriate fonts for my website, I have visited [Google Fonts]
 <a></a>
 #### Colors
 
+#ffff80 - Primary Color
+
+The background image represents the color scheme consisting mainly of green, a light gray, brown mountains and black giving which shows forest imagery. 
+
+The color chosen for the font was: #ffff80 which is a soft yellow to stand out against the parallax background. The font color needs to be specific against this images as it will pass through many different shades. #ffff80 seemed to be the best fit as it was the least straining on the eyes. 
 
 ![Color Scheme](wireframes/color-scheme.png)
 
@@ -140,17 +145,16 @@ The site has a built-in search feature that will allow the users to search anywh
 #### Live Weather
 The live weather data is displayed conveniently on the landing page. 
 
-#### Forecast Weather
-There will be a feature enabling users to check and see what the future weather data will be
-for the upcoming week all the way up to ten days.
  
 
 <a></a>
 ### **Features to be implemented**
-
+* Forecast weather
 * Interactive map for location with a link to activities that are suitable for the days weather.
 * A feature that could display the city for which the weather data is being displayed.
 * A feature that could change the backgroud image to match the current weather conditions i.e. rainy weather = rainy background.
+* Data on the road conditions.
+* 
 
 
 [Back to Top](#table-of-contents)
