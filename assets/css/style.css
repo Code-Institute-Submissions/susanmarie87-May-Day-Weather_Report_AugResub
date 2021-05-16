@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -11,8 +12,8 @@ html {
     background-color: hsla(200,40%,30%,.4);
     background-image:   
       url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), 
-      url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
-      url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
+      url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
+      url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
       url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
       url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
     background-repeat: repeat-x;
@@ -71,14 +72,14 @@ html {
       }
       .location .city {
         font-size: 25px;
-        color:#ffff4d;
+        color:#ffff80;        ;
         position: absolute;
         top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
     .location .date {
-        color: #ffff4d;
+        color: #ffff80;        ;
         position: absolute;
         top: 27%;
         left: 50%;
@@ -87,7 +88,9 @@ html {
     }
     .current .temp {
         font-size: 100px;
-        color:#ffff4d;
+        color:	#ffff80;
+        text-shadow: 2 rem;
+        font-weight: bold;
         position: absolute;
         top: 40%;
         left: 50%;
@@ -96,7 +99,7 @@ html {
     }
     .current .cloudy {
         font-size: 35px;
-        color: #ffff4d;
+        color: #ffff80;
         position: absolute;
         top: 60%;
         left: 50%;
@@ -105,7 +108,7 @@ html {
     }
     .current .hi-low {
         font-size: 15px;
-        color:#ffff4d;
+        color:#ffff80;
         position: absolute;
         top: 68%;
         left: 50%;
