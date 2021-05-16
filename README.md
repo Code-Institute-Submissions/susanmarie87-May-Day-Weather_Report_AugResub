@@ -101,6 +101,8 @@ In order to find appropriate fonts for my website, I have visited [Google Fonts]
 
 <a></a>
 #### Colors
+Initially, the original background chosen had a type of May Day style theme behind it with tons of lightning igniting the sky. Getting into the project though, the weather app needed 
+a bit of a kick, so the style was completely hanged. A CSS parallax background was added as the motion gives the weather app a nice touch versus being mundane with a simple background image.
 
 ![Color Scheme](wireframes/color-scheme.png)
 
@@ -283,6 +285,11 @@ To run the project locally:
 
 ### Content - Media - Inspiration
 
+[CSS Parallax Background Effect.](https://www.sliderrevolution.com/resources/css-animated-background/)
+
+
+
+[Inspiration for the project](https://www.youtube.com/watch?v=n4dtwWgRueI)
 
 ### Acknowledgements
 
