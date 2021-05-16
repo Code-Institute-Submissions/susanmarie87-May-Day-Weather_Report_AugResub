@@ -8,7 +8,7 @@ searchbox.addEventListener('keypress', setQuery);
 
 function setQuery(evt) {
     if (evt.keyCode == 13 ) {
-        getResults(searchbox.value);
+        getWeatherData(searchbox.value);
     }
 }
 
@@ -16,7 +16,8 @@ function getWeatherData(cityName) {
     fetch (`${api.base}weather?q=${cityName}&units=metric&APPID=${api.key}`)
     .then(weather => {
         return weather.json();
-    }).then(displayResults);
+    }).then(showWeatherResults);
+    
 }
 
 function showWeatherResults(weather) {
@@ -25,7 +26,7 @@ function showWeatherResults(weather) {
 
     let currentTime = new Date();
     let date = document.querySelector('.location .date');    
-    date.innerText = dateBuilder(currentTime);
+    date.innerText = generateDate(currentTime);
 
     let temp = document.querySelector('.current .temp');
     temp.innerHTML = `${Math.round(weather.main.temp)}<span>°c</span>`;
