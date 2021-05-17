@@ -209,9 +209,9 @@ The background looked much better without the green trees behind the font but wa
 The weather app needs to have a search box function where a user can input the location information and the app will return the exact data of the desired location. 
 
 * **Implementation**    
-Several methods were used in order to get this function to work properly. First, we set the 
+Several methods were used in order to get this function to work properly. First, the header and input type for the search box was set in index.html. Next, the search box was styled in CSS. Finally, the JavaScript was added into the JavaScript. 
 * **Test**    
-
+Initially, the searcbox function was not working
 * **Result**    
 
 * **Verdict**    
@@ -219,7 +219,7 @@ Several methods were used in order to get this function to work properly. First,
 * **Plan**    
 The weather app will have a feature that returns the high and low temperatures of the location. 
 * **Implementation**    
-
+This was accomplished by 
 * **Test**    
 
 * **Result**    
