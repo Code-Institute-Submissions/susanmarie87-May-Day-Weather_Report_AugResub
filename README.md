@@ -42,11 +42,9 @@ accurate so there is no need to look any further than right here.
 * A website filled with valuable content
 * Website should be easy to use on desktop, tablet & mobile
 * Appealing visual elements
-* Personal info about property & owners
-* Website with creative call-to-actions
-* Offer social proof like testimonials & guest reviews
-* Contact details should be easy to find
-* Form to contact owners directly from site
+* Accurate weather information.
+* The location selection should encompass all feasible locations.
+* The weather data is correct and shows the proper weather information.
 
 [Back to Top](#table-of-contents)
 
@@ -54,10 +52,10 @@ accurate so there is no need to look any further than right here.
 ### **User Stories**
 
 * As a user, I was to easily input my location information to retrieve the weather data in my desired area.
-* As a user, I want to be able to plan my vacation plans around the accurate results from the website.
+* As a user, I want to be able to plan my day around the accurate results from the website.
 * As a user, I want to be able to be able to access weather data using my phone's location.
-* As a user, I would like to 
-
+* As a user, I would like to see the high temperature or low temperature.
+* As a user, I want to be able to easily see the results of the weather. I do not want to have to follow multpile links to find the answer.
 
 <a></a>
 ### **Site owners Goals**
@@ -75,18 +73,18 @@ accurate so there is no need to look any further than right here.
 ### **User Requirements and Expectations**
 <a></a>
 #### Requirements
-* Easy to navigate by using the navigation menu
+* Accurate weather data
 * Appealing visual elements
-* Easy way to search for different locations for weather data.
-* Accurate weather reporting.
-* 
+* Easily accesible locations.
+* Accurate weather reporting of high and low temperatures.
+* Accurate reporting of conditions outside i.e. clouds, rain, sun.
 
 <a></a>
 #### Expectations
 
 * The user should know exactly what to do when first introduced to the landing page.
 * The search feature should be intuitive and work correctly.
-* Clear info about location and data is desirable. 
+* There should be clear info about location and data. 
 
 [Back to Top](#table-of-contents)
 
@@ -98,12 +96,9 @@ accurate so there is no need to look any further than right here.
 In order to find appropriate fonts for my website, I have visited [Google Fonts](https://fonts.google.com/ "Google Fonts") to explore the various options.
 
 <a></a>
-#### Icons
-
-<a></a>
 #### Colors
 
-#ffff80 - Primary Color
+#ffff80 - Primary Color is medium type yellow that stands outs against the naturesque background.
 
 The background image represents the color scheme consisting mainly of green, a light gray, brown mountains and black giving which shows forest imagery. 
 
