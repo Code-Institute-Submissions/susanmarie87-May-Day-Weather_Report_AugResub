@@ -24,11 +24,20 @@
 
 All html written for the site was checked using the HTML Validator on [W3C](https://validator.w3.org/).
 
-- #### index.html
+* **HTML Result:**
 
-<
+
+![HTML Test Results](wireframes/HTML-Test.png)
 
 ### W3C CSS Jigsaw Validator
+
+The CSS was checked and upon the first passm two minor errors were returned. One error was from unnecessary code. Another error in the text-shadow values which was removed as the text-shadow did not add much to the site itself.
+
+![CSS Errors](wireframes/CSS-ERROR.png)
+
+The CSS was then ran through again and passed all tests. 
+![CSS Pass](wireframes/CSS-Test-Pass.png)
+
 
 ### JSHint
 
@@ -78,15 +87,7 @@ The following breakpoints were tested using Chrome Dev Tools:
 
 ### Bugs
 
-  
-- 
-  ```
 
-    <br />
-    <img src="./markdown-images/fixed-flexbox-bug.png" alt="flexbox-fix" />
-
-<br />
-
-Click here to go back to [README.md](https://github.com/kenwilde1/crate-o-wine/blob/main/TESTING.md#testing)
+Click here to go back to [README](https://github.com/susanmarie87/may-day-weather-report/README.md)
 
 
