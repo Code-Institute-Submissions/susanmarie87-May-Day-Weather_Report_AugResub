@@ -2,18 +2,17 @@ function showWeatherResults(weather) {
 
     const locationCityRef = (document.querySelector('.location .city').innerText = `${weather.name}, ${weather.sys.country}`);
 
-    let currentTime = new Date();
+    const currentTime = new Date();
     let date = document.querySelector('.location .date');
     date.innerText = generateDate(currentTime);
 
-
-    let temp = document.querySelector('.current .temp');
+    const temp = document.querySelector('.current .temp');
     temp.innerHTML = `${Math.round(weather.main.temp)}<span>°c</span>`;
 
-    let currentWeather = document.querySelector('.current .weather');
+    const currentWeather = document.querySelector('.current .weather');
     currentWeather.innerHTML = weather.weather[0].main;
 
-    let hilow = document.querySelector('.hi-low');
+    const hilow = document.querySelector('.hi-low');
     hilow.innerHTML = `${Math.round(weather.main.temp_min)}°c / ${Math.round(weather.main.temp_max)}°c`;
 }
 const api = {
@@ -30,7 +29,6 @@ function setQuery(evt) {
         getWeatherData(searchbox.value);
     }
 }
-
 
 function getWeatherData(cityName) {
     fetch(`${api.base}weather?q=${cityName}&units=metric&APPID=${api.key}`)
@@ -50,7 +48,6 @@ function getWeatherData(cityName) {
 
         );
 }
-
 
 function generateDate(timeAndDate) {
     let months = ["January", "February", "March", "April", "May", "June", "July",
