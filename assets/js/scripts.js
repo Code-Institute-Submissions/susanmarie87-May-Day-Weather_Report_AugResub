@@ -1,4 +1,5 @@
 function showWeatherResults(weather) {
+
     const locationCityRef = (document.querySelector('.location .city').innerText = `${weather.name}, ${weather.sys.country}`);
 
     let currentTime = new Date();
@@ -9,14 +10,14 @@ function showWeatherResults(weather) {
     temp.innerHTML = `${Math.round(weather.main.temp)}<span>°c</span>`;
 
     let currentWeather = document.querySelector('.current .weather');
-    currentWeather.innertext = weather.weather[0].main;
+    currentWeather.innerText = weather.weather[0].main;
 
     let hilow = document.querySelector('.hi-low');
-    hilow.inner = `${Math.round(weather.main.temp_min)}°c / ${Math.round(weather.main.temp_max)}°c`;
+    hilow.innerHTML = `${Math.round(weather.main.temp_min)}°c / ${Math.round(weather.main.temp_max)}°c`;
 }
 
 const api = {
-    key: "926f9848e786e2fa78d6c0f226ee3e47",
+    key: "489bd97205f531f6264564502c3c7903",
     base: "https://api.openweathermap.org/data/2.5/"
 }
 
@@ -29,14 +30,24 @@ function setQuery(evt) {
     }
 }
 
-function getWeatherData(cityName) {
-    fetch(`${api.base}weather?q=${cityName}&units=metric&APPID=${api.key}`)
-        .then(weather => {
-            return weather.json();
-        }).then(showWeatherResults);
+fuction getWeatherData(cityName) {
+    fetch(`${api.base}weather?q=${cityName}&units=metric&APPID-${api.key}`)
+        .then(
+            (response) => {
+                if (!response.ok) {
+                    throw new Error("Location unknown. Please try again.");
+                }
+                return response.json();
+            }
+        )
+        .catch(error => {
+            console.log(error);
+            alert("location Unknown. Try again.");
+        })
+        .then(showWeatherResults
 
+        );
 }
-
 
 function generateDate(timeAndDate) {
     let months = ["January", "February", "March", "April", "May", "June", "July",
