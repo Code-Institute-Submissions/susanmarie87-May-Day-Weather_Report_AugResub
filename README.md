@@ -73,11 +73,11 @@ accurate so there is no need to look any further than right here.
 ### **User Requirements and Expectations**
 <a></a>
 #### Requirements
-* Accurate weather data
-* Appealing visual elements
-* Easily accesible locations.
-* Accurate weather reporting of high and low temperatures.
-* Accurate reporting of conditions outside i.e. clouds, rain, sun.
+* The application should allow users to operate the resources intuitively.
+* The web application's resources should be easily identifiable and easy to use.
+* The application must return accurate weather data.
+* The web application should return accurate weather reporting of high and low temperatures.
+* The web application should return accurate reporting of conditions outside i.e. clouds, rain, sun.
 
 <a></a>
 #### Expectations
@@ -85,6 +85,11 @@ accurate so there is no need to look any further than right here.
 * The user should know exactly what to do when first introduced to the landing page.
 * The search feature should be intuitive and work correctly.
 * There should be clear info about location and data. 
+* The option to choose between farenheit or celsius should be functional.
+* The buttons for the choices should stand out prominently and easily catch the eye.
+* The description of the weather outside should be accurate.
+* The minimum and maximum tempratures need to be mostly accurate give or take few degrees.
+
 
 [Back to Top](#table-of-contents)
 
@@ -98,7 +103,7 @@ In order to find appropriate fonts for my website, I have visited [Google Fonts]
 <a></a>
 #### Colors
 
-#ffff80 - Primary Color is medium type yellow that stands outs against the naturesque background.
+#ffff80 - The primary color used for this project is a medium type yellow that stands outs against the naturesque background. It also blended nicely and was not overpowering. This color looks to be the perfect fic against the parallax background.
 
 The background image represents the color scheme consisting mainly of green, a light gray, brown mountains and black giving which shows forest imagery. 
 
@@ -204,13 +209,13 @@ The background looked much better without the green trees behind the font but wa
 The weather app needs to have a search box function where a user can input the location information and the app will return the exact data of the desired location. 
 
 * **Implementation**    
-Several methods were used in order to get this function to work properly. First, the header and input type for the search box was set in index.html. Next, the search box was styled in CSS. Finally, the JavaScript was added into the JavaScript. 
+Several methods were used in order to get this function to work properly. First, the header and input type for the search box was set in index.html. Next, the search box was styled in CSS. Finally, the JavaScript const searchbox function was added into the scripts.js file.
 * **Test**    
-Initially, the searcbox function was not working
+The searchbox function returns locations. 
 * **Result**    
-
+ The search box function returned the locations but it was not giving an error alert if the spelling was incorrect or if the location was unknown. 
 * **Verdict**    
-
+While the searchbox returned the weather location information properly, it did not have an error function which is necessary in the event of grammatical errors or unknown location.
 * **Plan**    
 The weather app will have a feature that returns the high and low temperatures of the location. 
 * **Implementation**    
@@ -224,7 +229,9 @@ This was accomplished by
 [Back to Top](#table-of-contents)
 
 ### Bugs
-JavaScript. That's it. That's the bug.
+The first bug that took years off of my life and made me doubt my entire existence, was merely a dash that should have been and equal sign. This minor error was detrimental to my time and was discovered with the help of my mentor, Sime DAehlin. 
+
+The second bug that was discovered were simple misspelling in the const functions. The first two were missing the TEXT portion of inner.Text. The last error of the consts were 
 
 [Back to Top](#table-of-contents)
 
