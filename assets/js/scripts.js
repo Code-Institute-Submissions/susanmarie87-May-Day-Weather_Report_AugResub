@@ -5,19 +5,22 @@ function showWeatherResults(weather) {
     const locationCityRef = (document.querySelector('.location .city').innerText = `${weather.name}, ${weather.sys.country}`);
 
     const currentTime = new Date();
-    let date = document.querySelector('.location .date');
-    date.innerText = generateDate(currentTime);
+    let dateRef = document.querySelector('.location .date');
+    dateRef.innerText = generateDate(currentTime);
 
     const tempRef = document.querySelector('.current .temp');
+
     if (unitsGlobal == 0) {
         tempRef.innerHTML = `${Math.round(weather.main.temp)}<span>°c</span>`;
     } else {
         tempRef.innerHTML = `${Math.round((weather.main.temp * 9 / 5) + 32)}<span>°f</span>`;
     }
-    const currentWeather = document.querySelector('.current .weather');
-    currentWeather.innerHTML = weather.weather[0].main;
+
+    const currentWeatherRef = document.querySelector('.current .weather');
+    currentWeatherRef.innerHTML = weather.weather[0].main;
 
     const hilowRef = document.querySelector('.hi-low');
+
     if (unitsGlobal == 0) {
         hilowRef.innerHTML = `${Math.round(weather.main.temp_min)}°c / ${Math.round(weather.main.temp_max)}°c`;
     } else {
@@ -32,10 +35,12 @@ const api = {
 
 const searchbox = document.querySelector('.search-box');
 searchbox.addEventListener('keypress', setQuery);
+searchbox.addEventListener('blur', setQuery);
 
 
 function setQuery(evt) {
-    if (evt.keyCode == 13) {
+    if (evt.keyCode == 13) || (evt.type == "blur") {
+
         getWeatherData(searchbox.value);
     }
 }
@@ -45,7 +50,7 @@ function getWeatherData(cityName) {
         .then(
             (response) => {
                 if (!response.ok) {
-                    throw new Error("Location unknown. PLease try again.");
+                    throw new Error("Location unknown. Please try again.");
                 }
                 return response.json();
             }
