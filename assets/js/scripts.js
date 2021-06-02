@@ -1,3 +1,5 @@
+let unitsGlobal = 0;
+
 function showWeatherResults(weather) {
 
     const locationCityRef = (document.querySelector('.location .city').innerText = `${weather.name}, ${weather.sys.country}`);
@@ -48,6 +50,16 @@ function getWeatherData(cityName) {
 
         );
 }
+const radioCelsius = document.getElementById('celsius');
+radioCelsius.addEventListener('click', setCelsius);
+
+
+function setCelsius(evt) {
+    unitsGlobal = 0;
+    getWeatherData(searchbox.value);
+
+}
+
 
 function generateDate(timeAndDate) {
     let months = ["January", "February", "March", "April", "May", "June", "July",
