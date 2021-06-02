@@ -8,9 +8,12 @@ function showWeatherResults(weather) {
     let date = document.querySelector('.location .date');
     date.innerText = generateDate(currentTime);
 
-    const temp = document.querySelector('.current .temp');
-    temp.innerHTML = `${Math.round(weather.main.temp)}<span>°c</span>`;
-
+    const tempRef = document.querySelector('.current .temp');
+    if (unitsGlobal == 0) {
+        tempRef.innerHTML = `${Math.round(weather.main.temp)}<span>°c</span>`;
+    } else {
+        tempRef.innerHTML = `${Math.round((weather.main.temp * 9 / 5) + 32)}<span>°f</span>`;
+    }
     const currentWeather = document.querySelector('.current .weather');
     currentWeather.innerHTML = weather.weather[0].main;
 
