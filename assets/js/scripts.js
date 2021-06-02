@@ -17,8 +17,13 @@ function showWeatherResults(weather) {
     const currentWeather = document.querySelector('.current .weather');
     currentWeather.innerHTML = weather.weather[0].main;
 
-    const hilow = document.querySelector('.hi-low');
-    hilow.innerHTML = `${Math.round(weather.main.temp_min)}°c / ${Math.round(weather.main.temp_max)}°c`;
+    const hilowRef = document.querySelector('.hi-low');
+    if (unitsGlobal == 0) {
+        hilowRef.innerHTML = `${Math.round(weather.main.temp_min)}°c / ${Math.round(weather.main.temp_max)}°c`;
+    } else {
+        hilowRef.innerHTML = `${Math.round((weather.main.temp_min * 9 / 5) + 32)}°f / ${Math.round((weather.main.temp_max * 9 / 5) + 32)}°f`;
+    }
+}
 }
 const api = {
     key: "489bd97205f531f6264564502c3c7903",
