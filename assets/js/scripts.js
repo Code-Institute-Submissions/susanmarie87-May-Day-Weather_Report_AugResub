@@ -60,6 +60,16 @@ function setCelsius(evt) {
 
 }
 
+const radioFarenheit = document.getElementById('farenheit');
+radioFarenheit.addEventListener('click', setFarenheit);
+
+
+function setFarenheit(evt) {
+    unitsGlobal = 1;
+    getWeatherData(searchbox.value);
+}
+
+
 
 function generateDate(timeAndDate) {
     let months = ["January", "February", "March", "April", "May", "June", "July",
