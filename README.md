@@ -126,13 +126,20 @@ Since the app itself is so simple and one page, I battled with the thought of ad
 <a></a>
 ## **Wireframes**
 
-You can find my wireframes below:
+### You can find my original wireframes  with the parallax background below:
 
-![Desktop Wireframe](wireframes/mobile-h.png)
+[Desktop Wireframe](wireframes/mobile-h.png)
 
-![iPad Wireframe](wireframes/mobile-l.png)
+[iPad Wireframe](wireframes/mobile-l.png)
 
-![Mobile Wireframe](wireframes/laptop-md.png)
+[Mobile Wireframe](wireframes/laptop-md.png)
+
+### Current Wireframes
+
+[Mobile Wireframe](wireframes/Weather.png)
+
+[Desktop Wireframe](wireframes/Weather2.png)
+
 
 [Back to Top](#table-of-contents)
 
