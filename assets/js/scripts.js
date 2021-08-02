@@ -8,7 +8,9 @@ function showWeatherResults(weather) {
     let dateRef = document.querySelector('.location .date');
     dateRef.innerText = generateDate(currentTime);
 
+
     const tempRef = document.querySelector('.current .temp');
+
 
     if (unitsGlobal == 0) {
         tempRef.innerHTML = `${Math.round(weather.main.temp)}<span>°c</span>`;
@@ -21,12 +23,12 @@ function showWeatherResults(weather) {
 
     const hilowRef = document.querySelector('.hi-low');
 
+
     if (unitsGlobal == 0) {
         hilowRef.innerHTML = `${Math.round(weather.main.temp_min)}°c / ${Math.round(weather.main.temp_max)}°c`;
     } else {
         hilowRef.innerHTML = `${Math.round((weather.main.temp_min * 9 / 5) + 32)}°f / ${Math.round((weather.main.temp_max * 9 / 5) + 32)}°f`;
     }
-}
 }
 const api = {
     key: "489bd97205f531f6264564502c3c7903",
@@ -39,7 +41,7 @@ searchbox.addEventListener('blur', setQuery);
 
 
 function setQuery(evt) {
-    if (evt.keyCode == 13) || (evt.type == "blur") {
+    if ((evt.keyCode == 13) || (evt.type == "blur")) {
 
         getWeatherData(searchbox.value);
     }
@@ -63,6 +65,7 @@ function getWeatherData(cityName) {
 
         );
 }
+
 const radioCelsius = document.getElementById('celsius');
 radioCelsius.addEventListener('click', setCelsius);
 
@@ -73,6 +76,8 @@ function setCelsius(evt) {
 
 }
 
+
+
 const radioFarenheit = document.getElementById('farenheit');
 radioFarenheit.addEventListener('click', setFarenheit);
 
@@ -81,8 +86,6 @@ function setFarenheit(evt) {
     unitsGlobal = 1;
     getWeatherData(searchbox.value);
 }
-
-
 
 function generateDate(timeAndDate) {
     let months = ["January", "February", "March", "April", "May", "June", "July",
