@@ -103,14 +103,18 @@ accurate so there is no need to look any further than right here.
 #### Fonts
 In order to find appropriate fonts for my website, I have visited [Google Fonts](https://fonts.google.com/ "Google Fonts") to explore the various options.
 
+I choose the style Quicksand for its subtlety. This font style is clean and legible leaving the user feeling comfortable while retrieving their information. 
+
+Since the app itself is so simple and one page, I battled with the thought of adding several different types of font in order to break up any possible monotony but in the end I choose to keep it simple with a single font.
+
 <a></a>
 #### Colors
 
-#ffff80 - The primary color used for this project is a medium type yellow that stands outs against the naturesque background. It also blended nicely and was not overpowering. This color looks to be the perfect fic against the parallax background.
+#474242d0 Is a translucent type of grey that has such a modern and sharp appeal that i choose it to for the card which will display the weather data that is received.
 
-The background image represents the color scheme consisting mainly of green, a light gray, brown mountains and black giving which shows forest imagery. 
+#f2f2f2 Is the color of the font for all of the Headings, texts, and input on the app. I have chosen to go with darker colrs and white as they are a classic match and will not be visually straining on the eyes. 
 
-The color chosen for the font was: #ffff80 which is a soft yellow to stand out against the parallax background. The font color needs to be specific against this images as it will pass through many different shades. #ffff80 seemed to be the best fit as it was the least straining on the eyes. 
+#3a3a3a Was chosen for the searchbar. This color closely resembled the same color as the bootstrap navbar and I wanted to keep the colors congruent throughout the page. I want the user to feel positive about their experience while proving easy readablitity and I found that the Quicksand font embodied all of these aspects quite nicely.
 
 
 <a></a>
