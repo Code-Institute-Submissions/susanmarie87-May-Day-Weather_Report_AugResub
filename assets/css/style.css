@@ -43,3 +43,23 @@ body {
   border-radius: 20px;
   max-width: 400px;
 }
+
+/*-------Seacrhbar Container------*/
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*-------Searchbox Position------*/
+.search-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0px 0px;
+}
