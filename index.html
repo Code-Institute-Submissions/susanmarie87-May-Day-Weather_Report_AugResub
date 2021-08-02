@@ -18,11 +18,8 @@
         <a class="navbar-brand" href="index.html">Weather App</a>
 
     </nav>
-    <div class="app-wrap">
-        <header>
-            <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
 
-        </header>
+    <div class="card">
         <main>
             <div class="buttons">
                 <input type="radio" class="radio1" class="inline" id="celsius" name="radioDegrees"
@@ -39,6 +36,13 @@
                 <div class="hi-low">Max/Min</div>
             </div>
         </main>
+        <!--Search Bar-->
+        <div class="search">
+            <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+            <button type="submit" class="search-button">
+                <ion-icon name="search-outline"></ion-icon>
+            </button>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
