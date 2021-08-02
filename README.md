@@ -155,9 +155,9 @@ This app requires only a very basic navigation. Since there are no pages to navi
 The first thing to be displayed is the title of the weather app. 
 The second thing to be displayed will be a toggle switch capable of taking the site into dark mode.
 
+#### Hero Image
 
-#### Search Custom Location Weather
-The site has a built-in search feature that will allow the users to search anywhere in the world to check the current weather data.
+The Hero Image for this weather application is ever changing. Using a special link to unsplash, the hero image will consistently change anytime the page is refreshed. This makes having the weather data displayed on the card necessary as it impossible to see without a card.
 
 #### Live Weather
 The live weather data is displayed conveniently on the landing page. 
