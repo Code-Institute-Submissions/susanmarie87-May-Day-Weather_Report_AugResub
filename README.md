@@ -159,8 +159,10 @@ The second thing to be displayed will be a toggle switch capable of taking the s
 
 The Hero Image for this weather application is ever changing. Using a special link to unsplash, the hero image will consistently change anytime the page is refreshed. This makes having the weather data displayed on the card necessary as it impossible to see without a card.
 
-#### Live Weather
-The live weather data is displayed conveniently on the landing page. 
+#### How-To-Modal
+
+The how-to-Modal button is located conveniently with the card. This is so users can easily see that there is more information in the event they are unable to figure out how to use the site on their own. When the modal button is clicked a how-to-modal body will then pop-up with directions as to how the app works. The modal will feature a close button for the user when they have finished reading the instructions.
+
 
  
 
