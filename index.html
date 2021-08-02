@@ -19,56 +19,54 @@
         <a class="navbar-brand" href="index.html">Weather App</a>
 
     </nav>
-
-    <div class="card">
-        <main>
+    <main>
+        <div class="card">
             <div class="buttons">
                 <input type="radio" class="radio1" class="inline" id="celsius" name="radioDegrees"
                     checked>C&deg;</input>
                 <input type="radio" class="radio2" class="inline" id="farenheit" name="radioDegrees">F&deg;</input>
             </div>
-            <section class="location">
+            <sdiv class="location">
                 <div class="city">San Diego</div>
                 <div class="date">Today's Date</div>
-            </section>
-            <div class="current">
-                <div class="temp">Temp</div>
-                <div class="weather">Loading</div>
-                <div class="hi-low">Max/Min</div>
-            </div>
-            <button type="how-to" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalCenter">
-                How To Get Started
-            </button>
+                <div class="current">
+                    <div class="temp">Temp</div>
+                    <div class="weather">Loading</div>
+                    <div class="hi-low">Max/Min</div>
+                </div>
+                <button type="how-to" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalCenter">
+                    How To Get Started
+                </button>
 
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Weather Search Instructions</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">How To</span>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Weather Search Instructions</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">How To</span>
 
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <p></p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </main>
-        <!--Search Bar-->
-        <div class="search">
-            <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
-            <button type="submit" class="search-button">
-                <ion-icon name="search-outline"></ion-icon>
-            </button>
-        </div>
+    </main>
+    <!--Search Bar-->
+    <div class="search">
+        <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+        <button type="submit" class="search-button">
+            <ion-icon name="search-outline"></ion-icon>
+        </button>
+    </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
