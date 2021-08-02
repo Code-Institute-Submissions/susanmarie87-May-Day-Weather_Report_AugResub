@@ -63,3 +63,10 @@ body {
   justify-content: center;
   margin: 0px 0px 0px;
 }
+
+/*-------Seacrbar Text Input------*/
+input.search-box {
+  outline: none;
+  border: none;
+  background-color: #3a3a3a;
+}
