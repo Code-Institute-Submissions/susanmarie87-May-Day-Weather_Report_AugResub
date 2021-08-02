@@ -150,8 +150,11 @@ Since the app itself is so simple and one page, I battled with the thought of ad
 <a></a>
 ### **Existing Features**
 
-#### Current Location Weather
-Upon opening the website page, the weather data for your current location will be displayed along with time and date information.
+#### Navigation
+This app requires only a very basic navigation. Since there are no pages to navigate too there will only be two items displayed across the navbar but no actual links. 
+The first thing to be displayed is the title of the weather app. 
+The second thing to be displayed will be a toggle switch capable of taking the site into dark mode.
+
 
 #### Search Custom Location Weather
 The site has a built-in search feature that will allow the users to search anywhere in the world to check the current weather data.
