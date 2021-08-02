@@ -56,6 +56,9 @@ accurate so there is no need to look any further than right here.
 * As a user, I want to be able to be able to access weather data using my phone's location.
 * As a user, I would like to see the high temperature or low temperature.
 * As a user, I want to be able to easily see the results of the weather. I do not want to have to follow multpile links to find the answer.
+* As a user, I do not want to have to strain my eyes to see the weather data being displayed.
+* As a user, I want a simple app that will not drain my phone of its battery.
+* As a user, I want to be able to choose celsius or farenheit when reviewing the weather information.
 
 <a></a>
 ### **Site owners Goals**
