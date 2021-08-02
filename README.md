@@ -163,8 +163,9 @@ The Hero Image for this weather application is ever changing. Using a special li
 
 The how-to-Modal button is located conveniently with the card. This is so users can easily see that there is more information in the event they are unable to figure out how to use the site on their own. When the modal button is clicked a how-to-modal body will then pop-up with directions as to how the app works. The modal will feature a close button for the user when they have finished reading the instructions.
 
+#### Geolocation
 
- 
+Via the geolocation function, users will be able to grant permission to the app in order for the api to render their location. This will then automatically feed the user their personal weather data without having to manually enter their location. 
 
 <a></a>
 ### **Features to be implemented**
