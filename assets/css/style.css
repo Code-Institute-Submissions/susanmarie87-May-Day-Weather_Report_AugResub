@@ -58,6 +58,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-style: inset;
 }
 
 /*-------Searchbox Position------*/
@@ -70,14 +71,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0px 0px 0px;
+  margin: 0;
+}
+
+#search input[type="text"]:focus {
+  width: 200px;
+  outline-style: inset;
+  border: 2px solid #f2f2f2;
 }
 
 /*-------Seacrbar Text Input------*/
 input.search-box {
-  outline: none;
-  border: none;
+  font-size: 25px;
+  padding: 10px;
   background-color: #3a3a3a;
+  color: #f2f2f2;
 }
 
 form {
