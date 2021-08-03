@@ -198,7 +198,10 @@ Via the geolocation function, users will be able to grant permission to the app 
 ### **Tools**
 * [Git](https://git-scm.com/)
 * [GitPod](https://www.gitpod.io/)
-* [Balsamic](https://balsamiq.com/wireframes/)
+* [Balsamiq](https://balsamiq.com/wireframes/)
+* [FontAwesome](https://fontawesome.com)
+* [Open Cage API](https://opencagedata.com/)
+* [OpenWeather API](https://openweathermap.org/api)
 * [W3C HTML Validation Service](https://validator.w3.org/)
 * [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 * [techsini](http://techsini.com/)
@@ -285,8 +288,12 @@ To run the project locally:
 [CSS Parallax Background Effect.](https://www.sliderrevolution.com/resources/css-animated-background/)
 
 
+### Inspiration For The Project
 
-[Inspiration for the project](https://www.youtube.com/watch?v=n4dtwWgRueI)
+[Tyler Potts](https://www.youtube.com/watch?v=n4dtwWgRueI)
+
+[Jonah Lawrence](https://www.youtube.com/watch?v=WZNG8UomjSI)
+
 
 ### Acknowledgements
 [Simen Daehlin](https://www.linkedin.com/in/simendaehlin/) for quite literally dragging me through JavaScript. 
