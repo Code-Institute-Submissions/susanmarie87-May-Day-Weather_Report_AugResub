@@ -37,12 +37,11 @@ const api = {
 
 const searchbox = document.querySelector('.search-box');
 searchbox.addEventListener('keypress', setQuery);
-searchbox.addEventListener('blur', setQuery);
+
 
 
 function setQuery(evt) {
-    if ((evt.keyCode == 13) || (evt.type == "blur")) {
-
+    if ((evt.keyCode == 13)) {
         getWeatherData(searchbox.value);
     }
 }
@@ -57,13 +56,12 @@ function getWeatherData(cityName) {
                 return response.json();
             }
         )
+        .then(weatherData => showWeatherResults(weatherData))
         .catch(error => {
             console.log(error);
             alert("location Unknown. Please try again.");
         })
-        .then(showWeatherResults
 
-        );
 }
 
 const radioCelsius = document.getElementById('celsius');
