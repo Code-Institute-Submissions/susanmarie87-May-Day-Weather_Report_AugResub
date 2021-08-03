@@ -39,11 +39,11 @@ body {
   display: flex;
   position: absolute;
   top: 28%;
-  left: 35%;
+  left: 23%;
   margin-top: -50px;
   margin-left: -50px;
   background: #000000d0;
-  color: white;
+  color: #f2f2f2;
   padding: 2em;
   border-radius: 30px;
   width: 100%;
@@ -51,7 +51,12 @@ body {
   margin: 1em;
 }
 
-
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 1rem;
+  color: #333;
+}
 
 /*-------Seacrhbar Container------*/
 .search {
@@ -88,9 +93,24 @@ input.search-box {
   color: #f2f2f2;
 }
 
+/*-------Buttons------*/
+.buttons {
+  display: block;
+
+}
+
+input[type=checkbox],
+input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+  display: inline;
+  width: auto;
+}
+
+/*-------Contact Form------*/
 form {
   box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.2);
-  padding: 20px;
+  padding: 10px;
 }
 
 input,
@@ -100,7 +120,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 16px;
   resize: vertical;
 }
@@ -118,7 +138,7 @@ input[type="submit"]:hover {
   background-color: gray;
 }
 
-/* -- FOOTER -- */
+/* -- FOOTER-- */
 footer {
   align-items: center;
   margin-top: 50px;
@@ -161,13 +181,7 @@ footer ul {
   text-decoration: underline;
 }
 
-
-@media (max-width: 1200px) and (min-width: 992px) {
-  .card {
-    font-size: 25px;
-  }
-
-}
+@media (max-width: 1200px) and (min-width: 992px) {}
 
 
 @media (max-width: 991px) and (min-width: 768px) {}
