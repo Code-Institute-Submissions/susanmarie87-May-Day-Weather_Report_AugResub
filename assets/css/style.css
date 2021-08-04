@@ -103,7 +103,7 @@ input[type=radio] {
   width: auto;
 }
 
-
+/*-------Contact Form------*/
 .wrapper {
   position: absolute;
   top: 50%;
@@ -172,5 +172,4 @@ input[type=radio] {
     width: 50%;
     height: 100;
   }
-
 }
