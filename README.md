@@ -163,9 +163,9 @@ The Hero Image for this weather application is ever changing. Using a special li
 
 The how-to-Modal button is located conveniently with the card. This is so users can easily see that there is more information in the event they are unable to figure out how to use the site on their own. When the modal button is clicked a how-to-modal body will then pop-up with directions as to how the app works. The modal will feature a close button for the user when they have finished reading the instructions.
 
-#### Geolocation
+#### Contact Form
 
-Via the geolocation function, users will be able to grant permission to the app in order for the api to render their location. This will then automatically feed the user their personal weather data without having to manually enter their location. 
+A contact form adapted from [Coding Market- Form Validation](https://www.youtube.com/watch?v=WY4rvU4ImgE) was used to give users a place to send feedback in the event of errors with the site. 
 
 <a></a>
 ### **Features to be implemented**
@@ -324,7 +324,7 @@ The navigation bar shows nicely like expected on all browsers and devices.
 * **Verdict**    
 The test has passed all the criteria and works like planned.
 
-### Modals
+### Modal
 * **Plan**    
 I want to implement a modal which will open up when you click on 'How To Get Started'. 
 
@@ -413,6 +413,24 @@ Two things were done in order to solve this problem. First, the blur event was r
 The second problem was multi-faceted and in order to solve this the placement of the .then statement was switched and  the parameters were changed. The first error was that the .then statement was placed under the catch error which is incorrect and will constantly send the function searching for the city. Moving the statement above the catch error lets the server know to catch the error.
 Also, the parameters were wrong. I was passing showWeatherResults which was only grabbing data from the html and nothing about the actual location data. To solve this, weatherData was passed through instead and this grabbed specific data.
 
+[Back to Top](#table-of-contents)
+
+### Unresolved Issues
+
+<a></a>
+
+### iPad Pro and Large Screens
+
+* **Bug**
+On iPad Pro screens and other large screen sizes, the image beings to repeat again.
+
+
+### Searchbar Placeholder Text
+
+On very small screens like the Galaxy Fold, the placeholder text in the searchbar overlaps the screen. 
+
+
+
 ### User Stories Testing
 
 *** User Stories Testing ***
@@ -499,6 +517,7 @@ To run the project locally:
 
 
 ### Acknowledgements
+
 [Simen Daehlin](https://www.linkedin.com/in/simendaehlin/) for quite literally dragging me through JavaScript. 
 Without his help in helping to change my mindset about my capabilities, I may have given up. 
 
