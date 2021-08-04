@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="Enter your description here" />
+    <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik&display=swap">
@@ -31,15 +32,18 @@
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Send Us Feedback!</a>
                 </li>
+            </ul>
+        </div>
     </nav>
     <main>
         <div class="card">
             <div class="buttons">
-                <input type="radio" class="radio1" class="inline" id="celsius" name="radioDegrees"
-                    checked>C&deg;</input>
-                <input type="radio" class="radio2" class="inline" id="farenheit" name="radioDegrees">F&deg;</input>
+                <input type="radio" class="radio1" class="inline" data-type="horizontal" id="celsius"
+                    name="radioDegrees" checked>C&deg;
+                <input type="radio" class="radio2" class="inline-2" data-type="horizontal" id="farenheit"
+                    name="radioDegrees">F&deg;
             </div>
-            <sdiv class="location">
+            <div class="location">
                 <div class="city">San Diego</div>
                 <div class="date">Today's Date</div>
                 <div class="current">
@@ -47,39 +51,39 @@
                     <div class="weather">Loading</div>
                     <div class="hi-low">Max/Min</div>
                 </div>
-                <button type="how-to" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalCenter">
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalCenter">
                     How To Get Started
                 </button>
-
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">Weather Search Instructions</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">How To</span>
-
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <p></p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Weather Search Instructions</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">Weather Search Instructions</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Welcome! To get started, please enter your location into the searchbar located on the
+                        bottom of the screen and press enter.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
                 </div>
+            </div>
+        </div>
     </main>
     <!--Search Bar-->
     <div class="search">
         <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
         <button type="submit" class="search-button">
-            <ion-icon name="search-outline"></ion-icon>
+            <i class="fas fa-arrow-right"></i>
         </button>
-    </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
