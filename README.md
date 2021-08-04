@@ -116,9 +116,8 @@ Since the app itself is so simple and one page, I battled with the thought of ad
 
 #3a3a3a Was chosen for the searchbar. This color closely resembled the same color as the bootstrap navbar and I wanted to keep the colors congruent throughout the page. I want the user to feel positive about their experience while proving easy readablitity and I found that the Quicksand font embodied all of these aspects quite nicely.
 
+Overall the predominant colors of the site are dark grays with white text placement. This seemed to  be the most visually appealing to me. 
 
-<a></a>
-#### Structure
 
 [Back to Top](#table-of-contents)
 
@@ -324,6 +323,7 @@ The navigation bar shows nicely like expected on all browsers and devices.
 * **Verdict**    
 The test has passed all the criteria and works like planned.
 
+
 ### Modal
 * **Plan**    
 I want to implement a modal which will open up when you click on 'How To Get Started'. 
@@ -413,6 +413,7 @@ Two things were done in order to solve this problem. First, the blur event was r
 The second problem was multi-faceted and in order to solve this the placement of the .then statement was switched and  the parameters were changed. The first error was that the .then statement was placed under the catch error which is incorrect and will constantly send the function searching for the city. Moving the statement above the catch error lets the server know to catch the error.
 Also, the parameters were wrong. I was passing showWeatherResults which was only grabbing data from the html and nothing about the actual location data. To solve this, weatherData was passed through instead and this grabbed specific data.
 
+
 [Back to Top](#table-of-contents)
 
 ### Unresolved Issues
@@ -428,8 +429,6 @@ On iPad Pro screens and other large screen sizes, the image beings to repeat aga
 ### Searchbar Placeholder Text
 
 On very small screens like the Galaxy Fold, the placeholder text in the searchbar overlaps the screen. 
-
-
 
 ### User Stories Testing
 
