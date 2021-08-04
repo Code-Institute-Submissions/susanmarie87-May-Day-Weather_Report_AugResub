@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 // Form Validation
 function validate() {
     var name = document.getElementById("name").value;

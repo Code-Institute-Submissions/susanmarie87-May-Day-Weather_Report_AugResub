@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 let unitsGlobal = 0;
 
 function showWeatherResults(weather) {
@@ -33,7 +34,7 @@ function showWeatherResults(weather) {
 const api = {
     key: "489bd97205f531f6264564502c3c7903",
     base: "https://api.openweathermap.org/data/2.5/"
-}
+};
 
 const searchbox = document.querySelector('.search-box');
 searchbox.addEventListener('keypress', setQuery);
@@ -60,7 +61,7 @@ function getWeatherData(cityName) {
         .catch(error => {
             console.log(error);
             alert("location Unknown. Please try again.");
-        })
+        });
 
 }
 
@@ -98,5 +99,5 @@ function generateDate(timeAndDate) {
     let month = months[timeAndDate.getMonth()];
     let year = timeAndDate.getFullYear();
 
-    return `${day} ${date} ${month} ${year}`
+    return `${day} ${date} ${month} ${year}`;
 }
