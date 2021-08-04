@@ -256,6 +256,101 @@ The first bug that took years off of my life and made me doubt my entire existen
 
 The second bug that was discovered were simple misspelling in the const functions. The first two were missing the TEXT portion of inner.Text. The last error of the consts were 
 
+#### Parallax Background
+
+* **Bug**    
+One of the original plans was to go with a parallax background for the weather app. The background looked beautiful but there were several issues. The first issue being that no matter what color was used, the data would be overpowered multiple times with the passing of the trees and the clouds. Not a single font seemed to look good against the back of the parallax background.
+
+The second major issues with the parallax background was the enormous amount of CPU's that it was using to give the parallax effect. This excessive amount would kill a battery quick leaving the user with a bad experience when using the app.
+
+* **Fix**    
+The background was changed to a theme from unsplash where a new image is chosen every time. A card with a dark background color and white font was placed in the center that will reveal the data information upon a search.  
+
+* **Verdict** 
+Upon changing the parallax background and adding a card the site looked much more visually appealing and was no longer a strain on the eyes. 
+
+#### Form validation
+
+* **Bug**    
+When JavaScript portion was put through JSHint, 28 warnings came back. After some research on stackoverflow, I found that because I used ECMAScript 6, I needed to set an option letting JShint know that my code uses that specific syntax in order to avoid unecesssary warnings. 
+
+* **Fix**        
+I implemented the comment: /*jshint esversion: 6 */ - into jshint and only two warnings returned. Both missing semicolons. Line 38 and line 105. 
+
+* **Verdict**    
+The semi-colon was added in, the code was run through again and there were no errors returned after this.
+
+#### Hero Image
+
+* **Bug**    
+The hero image is having some major issues. On large screens, the images are repeating. I thought I could fix this by adding in background-repeat: no-repeat; which did take care of the image repeating issue but then created a very large blank gap between the search bar and the side. 
+
+* **Fix**    
+ This problem was solved by looking into the url from unsplashes unique random picture generator. In the link, there was a specified screen-size that I was overlooking. This isssue was solved by simply changing the size in the url to better fit larger screen sizes.
+
+* **Verdict**    
+
+Size matters.
+
+#### TypeError in Promise
+
+* **Bug**    
+In the event the user makes a mistake and inputs incorrect information into the search bar an automatic error is thrown. Unfortunately it does not go away with just the click of the button and continuously repeats and the page must be refreshed. Since this creates a poor user experience, the problem must be resolved.
+
+
+* **Fix** 
+Two things were done in order to solve this problem. First, the blur event was removed. The blur event was in place so that anytime a space outside of the search-box was clicked, the user would receive an error. This type of situation can cause frustration for users which will make them leave the site. 
+The second problem was multi-faceted and in order to solve this the placement of the .then statement was switched and  the parameters were changed. The first error was that the .then statement was placed under the catch error which is incorrect and will constantly send the function searching for the city. Moving the statement above the catch error lets the server know to catch the error.
+Also, the parameters were wrong. I was passing showWeatherResults which was only grabbing data from the html and nothing about the actual location data. To solve this, weatherData was passed through instead and this grabbed specific data.
+
+### User Stories Testing
+
+*** User Stories Testing ***
+
+This section will go through each User Story created and see if the objective has succeeded.
+
+* As a user, I was to easily input my location information to retrieve the weather d
+data in my desired area.
+
+ User can enter custom location into search-box.
+ Input is responsive on all devices
+
+* As a user, I want to be able to plan my day around the accurate results from the website.
+
+ The api weather data is consistently accurate.
+ 
+* As a user, I want to be able to be able to access weather data using my phone's location.
+
+ The geolocation function has been added using an [OpenCage API](https://opencage.com)
+  further testing is needed to check the accuracy of the geolocation.
+
+* As a user, I would like to see the high temperature or low temperature.
+
+ The [OpenWeather Api](https://openweather.com) works accurately to displaythe high 
+  and low temperature of the day.
+
+ The high low temperature is responsive on all devices.
+
+ The high low temperature is accurate.
+
+* As a user, I want to be able to easily see the results of the weather. I do not want to have to follow multpile links to find the answer.
+
+  The weather data is displayed nicely on the screen.
+
+  The weather data is respnonsive on all screen sizes.
+
+* As a user, I do not want to have to strain my eyes to see the weather data being displayed.
+
+  The background is visually appealing now but no longer straining since the parallax background was removed.
+
+* As a user, I want a simple app that will not drain my phone of its battery.
+   
+
+* As a user, I want to be able to choose celsius or farenheit when reviewing the weather information.
+ 
+ The app has two buttons that give the option to choose which metric you want to receive weather in. 
+
+
 [Back to Top](#table-of-contents)
 
 <a></a>
@@ -293,6 +388,8 @@ To run the project locally:
 [Tyler Potts](https://www.youtube.com/watch?v=n4dtwWgRueI)
 
 [Jonah Lawrence](https://www.youtube.com/watch?v=WZNG8UomjSI)
+
+[Coding Market](https://www.youtube.com/watch?v=WY4rvU4ImgE) Form Validation.
 
 
 ### Acknowledgements
