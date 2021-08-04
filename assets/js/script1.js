@@ -1,3 +1,4 @@
+// Form Validation
 function validate() {
     var name = document.getElementById("name").value;
     var subject = document.getElementById("subject").value;
@@ -38,48 +39,67 @@ function validate() {
     return true;
 }
 
-var api_key = '5bdc8787fb8043f5821fa588bc2377c3';
-var latitude = '51.0';
-var longitude = '7.0';
 
-var api_url = 'https://api.opencagedata.com/geocode/v1/json'
+// Geolocation 
+let geocode = {
+    reverseGeocode: function (latitude, longitude) {
+        var api_key = '5bdc8787fb8043f5821fa588bc2377c3';
+        var latitude = data.coords.latitude;
+        var longitude = data.coords.longitude;
 
-var request_url = api_url +
-    '?' +
-    'key=' + api_key +
-    '&q=' + encodeURIComponent(latitude + ',' + longitude) +
-    '&pretty=1' +
-    '&no_annotations=1';
+        var api_url = 'https://api.opencagedata.com/geocode/v1/json'
 
-// see full list of required and optional parameters:
-// https://opencagedata.com/api#forward
+        var request_url =
+            api_url +
+            "?" +
+            "key=" +
+            apikey +
+            "&q=" +
+            encodeURIComponent(latitude + "," + longitude) +
+            "&pretty=1" +
+            "&no_annotations=1";
 
-var request = new XMLHttpRequest();
-request.open('GET', request_url, true);
+        // see full list of required and optional parameters:
+        // https://opencagedata.com/api#forward
 
-request.onload = function () {
-    // see full list of possible response codes:
-    // https://opencagedata.com/api#codes
+        var request = new XMLHttpRequest();
+        request.open("GET", request_url, true);
 
-    if (request.status === 200) {
-        // Success!
-        var data = JSON.parse(request.responseText);
-        alert(data.results[0].formatted); // print the location
+        request.onload = function () {
+            // see full list of possible response codes:
+            // https://opencagedata.com/api#codes
 
-    } else if (request.status <= 500) {
-        // We reached our target server, but it returned an error
+            if (request.status == 200) {
+                // Success!
+                var data = JSON.parse(request.responseText);
+                weather.fetchWeather(data.results[0].components.city);
+                console.log(data.results[0].components.city)
+            } else if (request.status <= 500) {
+                // We reached our target server, but it returned an error
 
-        console.log("unable to geocode! Response code: " + request.status);
-        var data = JSON.parse(request.responseText);
-        console.log('error msg: ' + data.status.message);
-    } else {
-        console.log("server error");
+                console.log("unable to geocode! Response code: " + request.status);
+                var data = JSON.parse(request.responseText);
+                console.log("error msg: " + data.status.message);
+            } else {
+                console.log("server error");
+            }
+        };
+
+        request.onerror = function () {
+            // There was a connection error of some sort
+            console.log("unable to connect to server");
+        };
+
+        request.send(); // make the request
+    },
+    getLocation: function () {
+        function success(data) {
+            geocode.reverseGeocode(data.coords.latitude, data.coords.longitude);
+        }
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(success, console.error);
+        } else {
+            weather.fetchWeather("San Diego");
+        }
     }
 };
-
-request.onerror = function () {
-    // There was a connection error of some sort
-    console.log("unable to connect to server");
-};
-
-request.send(); // make the request
