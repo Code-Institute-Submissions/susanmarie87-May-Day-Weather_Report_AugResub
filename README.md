@@ -1,6 +1,6 @@
 # **May Day Weather Report**
 
-![Mokeup image](wireframes/mokeup-image.png)
+![Landing Page](assets/images/landing.png)
 
 ## **Goal for this project** 
 
@@ -204,14 +204,87 @@ Via the geolocation function, users will be able to grant permission to the app 
 * [OpenWeather API](https://openweathermap.org/api)
 * [W3C HTML Validation Service](https://validator.w3.org/)
 * [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
-* [techsini](http://techsini.com/)
 * [Tiny PNG](https://tinypng.com/)
 
 [Back to Top](#table-of-contents)
 
 <a></a>
 ## **Testing**
-Testing can be viewed at [TESTING.md](https://github.com/susanmarie87/may-day-weather-report/TESTING.md)
+
+## Code Validation
+
+### W3C HTML Validator
+
+All html written for the site was checked using the HTML Validator on [W3C](https://validator.w3.org/).
+
+Multiple div errors were returned and fixed.
+
+An aria-labelledby error was present so that was removed.
+
+Two errors pertaining to the radio buttons about being duplicate classes as I had unecessary inline class elements that were originally for styling. These were removed and all the index.html code passed: 
+
+[HTML PASS](assets/images/index-pass.png)
+
+
+
+### W3C CSS Jigsaw Validator
+
+The CSS was checked and upon the first pass two minor errors were returned. One error was from unnecessary code. Another error in the text-shadow values which was removed as the text-shadow did not add much to the site itself.
+
+[CSS PASS](assets/images/css-pass.png)
+
+### JSHint
+
+All JavaScript was passed through JSHint Validator. Upon the initial test, A whopping 28 errors were returned. This problem was solved by adding the /*jshint esversion: 6 */ comment into the validator. 
+After adding the comment, one unused variable: 'locationCityRef' was returned. This error was ignored. 
+
+### Metric Results For Weather Data:
+There are 9 functions in this file.
+
+Function with the largest signature take 1 arguments, while the median is 1.
+
+Largest function has 14 statements in it, while the median is 2.
+
+The most complex function has a cyclomatic complexity value of 3 while the median is 1.
+
+### Metric Results Contact form:
+
+CONFIGURE
+Metrics
+There is only one function in this file.
+
+It takes no arguments.
+
+This function contains 20 statements.
+
+Cyclomatic complexity number for this function is 5.
+
+One unused variable
+2	validate
+
+
+
+[Back to top](#table-of-contents)
+
+---
+
+
+## User Testing
+
+### Browser Compatibility
+
+**Note**: Responsiveness covers Desktop, Mobile and Tablet.
+
+[Back to top](#table-of-contents)
+
+### Responsiveness Testing
+
+The following breakpoints were tested using Chrome Dev Tools:
+
+- **Desktop** - 1920px x 1080px
+- **Tablet** - 768px x 1024px
+- **Mobile** - 360px x 640px
+
 
 * **Plan**    
 Initially, the original background chosen had a type of May Day style theme behind it with tons of lightning igniting the sky. However, this picture and background theme was changed in the middle of the project. It was too harsh visually and the weather app called for something that would be slightly more impressive, which led me to find the CSS parallax background.
@@ -225,34 +298,71 @@ Due to the many colors in the background, it seemed as though all of the font co
 
 * **Result**    
 The visual problem was solved by removing the green trees in the background. This offset the clouds just enough so that the font did not get lost when it moved through the white backgroud. The green also impaired the font color presentation.
-* **Verdict**    
+
+* **Verdict**
+
 The background looked much better without the green trees behind the font but was still visually appealing to the user.
 
-* **Plan**   
-The weather app needs to have a search box function where a user can input the location information and the app will return the exact data of the desired location. 
+### Navigation bar
 
-* **Implementation**    
-Several methods were used in order to get this function to work properly. First, the header and input type for the search box was set in index.html. Next, the search box was styled in CSS. Finally, the JavaScript const searchbox function was added into the scripts.js file.
-* **Test**    
-The searchbox function returns locations. 
-* **Result**    
- The search box function returned the locations but it was not giving an error alert if the spelling was incorrect or if the location was unknown. 
-* **Verdict**    
-While the searchbox returned the weather location information properly, it did not have an error function which is necessary in the event of grammatical errors or unknown location.
 * **Plan**    
-The weather app will have a feature that returns the high and low temperatures of the location. 
-* **Implementation**    
-This was accomplished by 
+I want to include a navigation bar which will be fixed on top. 
+The navigation should also be responsive when broken down to smaller screen sizes.
+The title should be positioned in a way that it does not distract but fits in subtly in the background.
+
+* **Implementation**   
+I implemented the navigation bar using Bootstrap. This helps to give an overall structure and lay out to the navbar. 
+
 * **Test**    
+To test the navigation bar, I have click all the links to make sure it works properly. 
+I have also opened the website in various browers (safari, google chrome, mozilla firefox) to make sure it works on all browsers and devices.
 
 * **Result**    
+The navigation bar shows nicely like expected on all browsers and devices. 
+
 
 * **Verdict**    
+The test has passed all the criteria and works like planned.
+
+### Modals
+* **Plan**    
+I want to implement a modal which will open up when you click on 'How To Get Started'. 
+
+* **Implementation**    
+Using Bootstrap, I was able to get a code snippet for a Modal and implement it onto the card body where the user will be able to easily identify the button in the event that they need help figuring out how to operate the site.
+
+* **Test**    
+I have tested the modal on various devices and browsers. 
+The modal was nicely centered and feels in line with the overall website. 
+
+* **Result**    
+The modal opened up when the correct button was clicked and appeared centered on the screen.
+
+* **Verdict**    
+The modal works as planned and met all the criteria. 
+
+
+### Search Bar
+* **Plan**    
+I want to include a search bar where the user can easily identify that this is the first step in retrieving their weather data. The search bar should be visually appealing as well as functional. When the location information is entered into the search bar accurate data needs to be passed back into the card. 
+
+* **Implementation**    
+In order to implement this, an event listener was set on the search box for the key value 13 which is the enter button. Thiere will then be a fetch request ran. 
+
+* **Test**    
+The first three weeks of this project were a nightmare. I could not figure out why nothing I was doing was working. As it turns out, hidden in my api key was a - symbol instead of a + symbol. To this day I still do not know what that means. It has created within me a trauma response to javascript and code in general. This very minor but horrific detail was solved by my mentor, Simen Daehlin. 
+
+* **Result**    
+Upon changing the syntax, the functionality of the search bar was finally brought to life and all was right again in the world. .
+
+* **Verdict**    
+The search bar meets proper functionality.
+
 
 [Back to Top](#table-of-contents)
 
 ### Bugs
-The first bug that took years off of my life and made me doubt my entire existence, was merely a dash that should have been and equal sign. This minor error was detrimental to my time and was discovered with the help of my mentor, Sime DAehlin. 
+The first bug that took years off of my life and made me doubt my entire existence, was merely a dash that should have been and equal sign. This minor error was detrimental to my time and was discovered with the help of my mentor, Sime Daehlin. 
 
 The second bug that was discovered were simple misspelling in the const functions. The first two were missing the TEXT portion of inner.Text. The last error of the consts were 
 
@@ -269,7 +379,7 @@ The background was changed to a theme from unsplash where a new image is chosen 
 * **Verdict** 
 Upon changing the parallax background and adding a card the site looked much more visually appealing and was no longer a strain on the eyes. 
 
-#### Form validation
+#### JSHint Validator
 
 * **Bug**    
 When JavaScript portion was put through JSHint, 28 warnings came back. After some research on stackoverflow, I found that because I used ECMAScript 6, I needed to set an option letting JShint know that my code uses that specific syntax in order to avoid unecesssary warnings. 
@@ -290,7 +400,7 @@ The hero image is having some major issues. On large screens, the images are rep
 
 * **Verdict**    
 
-Size matters.
+Double checking url links for pre-determined sizing is imperative.
 
 #### TypeError in Promise
 
@@ -309,46 +419,42 @@ Also, the parameters were wrong. I was passing showWeatherResults which was only
 
 This section will go through each User Story created and see if the objective has succeeded.
 
-* As a user, I was to easily input my location information to retrieve the weather d
-data in my desired area.
+ As a user, I was to easily input my location information to retrieve the weather data in my desired area.
 
- User can enter custom location into search-box.
- Input is responsive on all devices
+- User can enter custom location into search-box.
 
-* As a user, I want to be able to plan my day around the accurate results from the website.
+- Input is responsive on all devices
 
- The api weather data is consistently accurate.
+As a user, I want to be able to plan my day around the accurate results from the website.
+
+- The api weather data is consistently accurate.
  
-* As a user, I want to be able to be able to access weather data using my phone's location.
+ As a user, I would like to see the high temperature or low temperature.
 
- The geolocation function has been added using an [OpenCage API](https://opencage.com)
-  further testing is needed to check the accuracy of the geolocation.
-
-* As a user, I would like to see the high temperature or low temperature.
-
- The [OpenWeather Api](https://openweather.com) works accurately to displaythe high 
+- The [OpenWeather Api](https://openweather.com) works accurately to displaythe high 
   and low temperature of the day.
 
- The high low temperature is responsive on all devices.
+- The high low temperature is responsive on all devices.
 
- The high low temperature is accurate.
+- The high low temperature is accurate.
 
-* As a user, I want to be able to easily see the results of the weather. I do not want to have to follow multpile links to find the answer.
+As a user, I want to be able to easily see the results of the weather. I do not want to have to follow multpile links to find the answer.
 
-  The weather data is displayed nicely on the screen.
+- The weather data is displayed nicely on the screen.
 
   The weather data is respnonsive on all screen sizes.
 
-* As a user, I do not want to have to strain my eyes to see the weather data being displayed.
+ As a user, I do not want to have to strain my eyes to see the weather data being displayed.
 
-  The background is visually appealing now but no longer straining since the parallax background was removed.
+- The background is visually appealing now but no longer straining since the parallax background was removed.
 
-* As a user, I want a simple app that will not drain my phone of its battery.
-   
+As a user, I want a simple app that will not drain my phone of its battery.
 
-* As a user, I want to be able to choose celsius or farenheit when reviewing the weather information.
+- Parallax background was removed to avoid the draining of batteries. 
+
+As a user, I want to be able to choose celsius or farenheit when reviewing the weather information.
  
- The app has two buttons that give the option to choose which metric you want to receive weather in. 
+- The app has two buttons that give the option to choose which metric you want to receive weather in. 
 
 
 [Back to Top](#table-of-contents)
@@ -385,11 +491,11 @@ To run the project locally:
 
 ### Inspiration For The Project
 
-[Tyler Potts](https://www.youtube.com/watch?v=n4dtwWgRueI)
+[Tyler Potts-JavaScript Inspiration](https://www.youtube.com/watch?v=n4dtwWgRueI) 
 
-[Jonah Lawrence](https://www.youtube.com/watch?v=WZNG8UomjSI)
+[Jonah Lawrence- Design Inspiration](https://www.youtube.com/watch?v=WZNG8UomjSI)
 
-[Coding Market](https://www.youtube.com/watch?v=WY4rvU4ImgE) Form Validation.
+[Coding Market- Form Validation](https://www.youtube.com/watch?v=WY4rvU4ImgE)
 
 
 ### Acknowledgements
